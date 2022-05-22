@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+
+<!-- Set up the position of the box -->
+    <style>
+        .wrapper{
+          display:flex;
+          justify-content:space-around;
+          flex-wrap: wrap;
+        }
+/* template of box */
+        .box{
+          width: 180px;
+          height: 180px;
+          border: 2px solid black;
+          margin: 20px;
+        }
+        </style>
+</head>
+<body>
+<!-- set the title in center -->
+    <h1 style="text-align: center;">Welcome!</h1>
+    <div class="wrapper">
+<!-- set the for loop to print the out 
+use Jinja syntax -->
+      {% for x in range(0,times) %}
+          <div class="box" style="background-color:{{colors}};"></div>
+      {% endfor %}
+    </div>
+        
+    
+</body>
+</html>
